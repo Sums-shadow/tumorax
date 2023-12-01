@@ -1,16 +1,10 @@
-# tumorax
 
-A new Flutter project.
+# Tumorax Mobile
 
-## Getting Started
+Tumorax mobile is an application to detect tumor in brain using deep learning.
 
-This project is a starting point for a Flutter application.
+##
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Peview](https://firebasestorage.googleapis.com/v0/b/kinstore-a9427.appspot.com/o/capture_tumorax.jpeg?alt=media&token=fba19961-c4dd-444a-8730-d47ece00a8c4)
