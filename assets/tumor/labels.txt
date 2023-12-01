@@ -1,0 +1,4 @@
+0 tumeur gliome
+1 tumeur méningiome
+2 tumeur hypophysaire
+3 Pas de tumeur
