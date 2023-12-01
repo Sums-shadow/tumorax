@@ -70,7 +70,7 @@ class _TfliteModelState extends State<TfliteModel> {
                       child: Stack(
                         children: [
                           Center(child: Image.file(_image)),
-                        scanning?  Lottie.asset("assets/scan.json"):SizedBox(),
+                        scanning?  Lottie.asset("assets/scan.json"):const SizedBox(),
                         ],
                       ),
                     )
@@ -88,8 +88,8 @@ class _TfliteModelState extends State<TfliteModel> {
                                 height: 100,
                                 width: 100,
                               ),
-                              Text("Aucune image selectionnée", style: TextStyle(fontSize: 19, fontWeight: FontWeight.w600),),
-                              Text("Cliquer sur le bouton ci-dessous pour selectionner une image", textAlign: TextAlign.center,)
+                              const Text("Aucune image selectionnée", style: TextStyle(fontSize: 19, fontWeight: FontWeight.w600),),
+                              const Text("Cliquer sur le bouton ci-dessous pour selectionner une image", textAlign: TextAlign.center,)
                             ],
                           ),
                         ),
@@ -99,7 +99,7 @@ class _TfliteModelState extends State<TfliteModel> {
                 child: Column(
                   children: (imageSelect)
                       ? _results.map((result) {
-                          return scanning? SizedBox(): Card(
+                          return scanning? const SizedBox(): Card(
                             child: Column(
                               children: [
                                 Container(
@@ -112,7 +112,7 @@ class _TfliteModelState extends State<TfliteModel> {
                                 ),
                                 Padding(
                                   padding: const EdgeInsets.all(8.0),
-                                  child: Text("D'après l'image reçue, il se peut que vous ${result['label'].substring(1).toString().trim().toLowerCase()=='pas de tumeur'?'n\'ayez pas de tumeur':'ayez une tumeur de type ${result['label'].substring(1).toString().toLowerCase()}'}", style: TextStyle(fontSize: 17, color: Colors.grey, fontWeight: FontWeight.w500), textAlign: TextAlign.center,),
+                                  child: Text("D'après l'image reçue, il se peut que vous ${result['label'].substring(1).toString().trim().toLowerCase()=='pas de tumeur'?'n\'ayez pas de tumeur':'ayez une tumeur de type ${result['label'].substring(1).toString().toLowerCase()}'}", style: const TextStyle(fontSize: 17, color: Colors.grey, fontWeight: FontWeight.w500), textAlign: TextAlign.center,),
                                 ),
                                 // Container(
                                 //   margin: EdgeInsets.all(10),
@@ -132,7 +132,7 @@ class _TfliteModelState extends State<TfliteModel> {
             ],
           ),
        
-       Positioned(
+       const Positioned(
         bottom: 5,
         left: 25,
         child: Text("Kaka Nzuki Medi 2023", style: TextStyle(fontSize: 12, fontWeight: FontWeight.w200, color:Colors.grey),))
